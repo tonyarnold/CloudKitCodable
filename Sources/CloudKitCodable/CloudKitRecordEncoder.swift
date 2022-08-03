@@ -30,6 +30,7 @@ public enum CloudKitRecordEncodingError: Error {
     }
 }
 
+/// A type that can encode values into a `CKRecord`.
 public class CloudKitRecordEncoder {
     public var zoneID: CKRecordZone.ID?
 

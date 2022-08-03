@@ -9,6 +9,7 @@
 import Foundation
 import CloudKit
 
+/// A type that can decode values from a `CKRecord` into in-memory representations.
 final public class CloudKitRecordDecoder {
     public func decode<T>(_ type: T.Type, from record: CKRecord) throws -> T where T : Decodable {
         let decoder = _CloudKitRecordDecoder(record: record)
